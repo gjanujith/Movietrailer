@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Movietrailer/static/css/main.2fbf98ed.css",
+    "main.js": "/Movietrailer/static/js/main.29766397.js",
+    "static/js/787.d4059048.chunk.js": "/Movietrailer/static/js/787.d4059048.chunk.js",
+    "index.html": "/Movietrailer/index.html",
+    "main.2fbf98ed.css.map": "/Movietrailer/static/css/main.2fbf98ed.css.map",
+    "main.29766397.js.map": "/Movietrailer/static/js/main.29766397.js.map",
+    "787.d4059048.chunk.js.map": "/Movietrailer/static/js/787.d4059048.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fbf98ed.css",
+    "static/js/main.29766397.js"
+  ]
+}
