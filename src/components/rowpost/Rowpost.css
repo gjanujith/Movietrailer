@@ -1,0 +1,112 @@
+
+.posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.poster {
+  padding-top: 5px;
+  max-height: 400px;
+  margin-left: 10px;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.smallPoster {
+  padding-top: 5px;
+  max-height: 250px;
+  margin-left: 7px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.posters ::-webkit-scrollbar {
+  display: none;
+}
+
+.titles {
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.content-item {
+  padding-left: 40px;
+}
+
+.poster:hover,
+.smallPoster:hover {
+  transform: scale(1.2);
+}
+
+.button-38 {
+  background-color: #bebebe;
+  border: 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-38:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.button-38:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+  box-shadow: none;
+}
+
+.title-movie {
+  padding-left: 8px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .posters {
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding-left: 10px;
+    margin-left: 0;
+  }
+
+  .poster,
+  .smallPoster {
+    max-height: 200px;
+    margin-left: 5px;
+  }
+
+  .titles {
+    margin-left: 5px;
+  }
+
+  .content-item {
+    padding-left: 0;
+  }
+
+  .button-38 {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .title-movie {
+    padding-left: 5px;
+    font-size: 14px;
+  }
+}
